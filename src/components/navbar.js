@@ -1,6 +1,8 @@
 import "./navBar.css"
 import { NavLink } from "react-router-dom";
 
+// NavLink allows for routing in react, it is used in place of the anchor tag 'a'.
+
 function NavBar() {
     return (
         <>

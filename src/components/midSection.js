@@ -4,6 +4,8 @@ import buttonCyan from "./images/buttonCyan.svg"
 import { useEffect, useState } from "react"
 import * as Tone from 'tone'
 
+
+// listens for the key presses in order to trigger the sound for the synth keyboard
 function handleKeyPress(event) {
     if(event.key === 'z') {
         console.log("You pressed Z")
@@ -92,15 +94,6 @@ function MidSection(props) {
                     <button onClick={() => props.playSound9()} onKeyDown={handleKeyPress}><img src={buttonCyan} alt="" srcset="" /></button>
                     <button onClick={() => props.playSound10()} onKeyDown={handleKeyPress}><img src={buttonCyan} alt="" srcset="" /></button>
                 </div>
-                {/* <div className="controls">
-                    <div className="source1">
-                        <img id="source1" src="./images/Source 1.svg" alt="" srcset="" />
-                    </div>
-                    <div className="playback">
-                        <img id="playback" src="./images/Tape Play.svg" alt="" srcset="" />
-                    </div>
-                </div> */}
-                
             </header>
         </div>   
     )

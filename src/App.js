@@ -19,7 +19,7 @@ function App() {
     return (
       <div className="App">
         <NavBar />
-          {/* You need Routes and Routes from react to route through your pages in the website. */}
+          {/* You need Routes and Route from react to route through your pages in the website. */}
         <header className="Main-Content">
           <Routes> 
             <Route exact path='/' element={<Home />} /> 
