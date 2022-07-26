@@ -1,0 +1,107 @@
+:root {
+    --orange: hsla(32, 100%, 50%, 1);
+    --yellow: hsla(49, 99%, 50%, 1);
+    --lime: hsla(82, 90%, 45%, 1);
+    --green: hsla(127, 81%, 41%, 1);
+    --red: hsla(342, 93%, 53%, 1);
+    --pink: hsla(314, 85%, 45%, 1);
+    --blue: hsla(211, 92%, 52%, 1);
+    --purple: hsla(283, 92%, 44%, 1);
+    --cyan: hsla(195, 98%, 55%, 1);
+    --white: hsla(0, 0%, 95%, 1);
+    --black: hsla(0, 0%, 10%, 1);
+  
+    /* abstract our colours */
+    --boxMain: var(--pink);
+    --boxSecond: var(--purple);
+    --boxHigh: var(--red);
+    --border: 2px solid var(--black);
+    --borderRad: 2px;
+}
+
+#tracks {
+    max-height: 400px;
+    min-height: 400px;
+}
+
+#tracks h2 {
+    align-self: flex-start;
+}
+
+.pads {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pads input {
+    appearance: none;
+    width: 2vw;
+    height: 1vw;
+    /* min-width: 56px;
+    min-height: 56px; */
+    /* max-width: 96px;
+    max-height: 96px; */
+    margin: 1px;
+    padding: 0;
+    background-color: var(--white);
+    border: var(--border);
+}
+
+.pads input:checked {
+    background-color: var(--boxHigh);
+  }
+
+/* #stop {
+    max-height: 50px;
+    max-width: 50px;
+} */
+
+button {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    color: aliceblue;
+}
+
+#play {
+    max-height: 50px;
+    max-width: 55px;
+}
+
+#stop {
+    max-height: 50px;
+    max-width: 55px;
+}
+
+#record {
+    max-height: 50px;
+    max-width: 55px;
+}
+
+.play:hover {
+    transform: translateY(-8px);
+ }
+
+ .tape-play {
+    border: 1px white solid;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    padding: 5px;
+    justify-content: center;
+    background-color: #181818;
+    height: fit-content;
+ }
+
+ .tape-play > header {
+    color: #181818;
+    background-color: aliceblue;
+ }
+
+ #stop, .play {
+    background-color: #181818;
+ }
