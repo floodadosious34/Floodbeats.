@@ -18,49 +18,63 @@ class Home extends Component {
     this.playNote8 = this.playNote8.bind(this)
     this.playNote9 = this.playNote9.bind(this)
     this.playNote10 = this.playNote10.bind(this)
+    this.playNote11 = this.playNote11.bind(this)
+    this.playNote12 = this.playNote12.bind(this)
+    this.playNote13 = this.playNote13.bind(this)
   }
 
 
   playNote1() {
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("C4", "8n");
-    setInterval(() => console.log(Tone.now()), 100);
   }
   playNote2() {
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("E4", "8n");
+    synth.triggerAttackRelease("Db4", "8n");
   }
   playNote3() {
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("G4", "8n");
+    synth.triggerAttackRelease("D4", "8n");
   }
   playNote4() {
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("B4", "8n");
+    synth.triggerAttackRelease("eb4", "8n");
   }
   playNote5() {
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("C5", "8n");
+    synth.triggerAttackRelease("E4", "8n");
   }
   playNote6() {
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("eb5", "8n");
+    synth.triggerAttackRelease("F4", "8n");
   }
   playNote7() {
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("G5", "8n");
+    synth.triggerAttackRelease("gb4", "8n");
   }
   playNote8() {
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("Bb5", "8n");
+    synth.triggerAttackRelease("G4", "8n");
   }
   playNote9() {
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("C6", "8n");
+    synth.triggerAttackRelease("ab4", "8n");
   }
   playNote10() {
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("C4", "8n");
+    synth.triggerAttackRelease("A4", "8n");
+  }
+  playNote11() {
+    const synth = new Tone.Synth().toDestination();
+    synth.triggerAttackRelease("bb4", "8n");
+  }
+  playNote12() {
+    const synth = new Tone.Synth().toDestination();
+    synth.triggerAttackRelease("B4", "8n");
+  }
+  playNote13() {
+    const synth = new Tone.Synth().toDestination();
+    synth.triggerAttackRelease("C5", "8n");
   }
 
   render() {
@@ -78,6 +92,9 @@ class Home extends Component {
                 playSound8={this.playNote8}
                 playSound9={this.playNote9}
                 playSound10={this.playNote10}
+                playSound11={this.playNote11}
+                playSound12={this.playNote12}
+                playSound13={this.playNote13}
               />
         <Sequencer />
       </>

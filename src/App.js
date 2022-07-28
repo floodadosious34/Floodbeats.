@@ -9,6 +9,7 @@ import Contact from './components/pages/contact';
 import './App.css';
 // import makeSound from './components/makeSound'
 import NavBar from './components/navbar';
+import Footer from './components/footer'
 // import MidSection from './components/midSection';
 // import Sequencer from './components/sequencer';
 
@@ -28,6 +29,7 @@ function App() {
             <Route exact path='/contact' element={<Contact/>} />
           </Routes>
         </header>
+        <Footer />
       </div>
     );
 }

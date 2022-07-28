@@ -105,3 +105,9 @@ label {
  #stop, .play {
     background-color: #181818;
  }
+
+ audio {
+    margin: 1rem auto;
+    height: 20px;
+    width: 300px;
+ }

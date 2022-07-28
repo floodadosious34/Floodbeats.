@@ -15,9 +15,9 @@ body {
     height: 72px;
 }
  .wrapper {
-   width: 1500px;
    margin: 0;
    background-color: #fffffa;
+   padding: 0 10px;
  }
 
  nav {

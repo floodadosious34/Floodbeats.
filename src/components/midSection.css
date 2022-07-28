@@ -1,7 +1,7 @@
 /* Header */
  
 .wrapper2 {
-    height: 300px;
+    height: 250px;
 }
 header {
     display: flex;
@@ -32,7 +32,7 @@ header {
  }
 
  .hero-content {
-    height: 90px;
+    height: 70px;
  }
 
  .hero-image > button > img {
